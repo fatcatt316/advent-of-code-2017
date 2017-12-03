@@ -3,7 +3,7 @@ Code.load_file("checksum.exs", __DIR__)
 ExUnit.start
 ExUnit.configure exclude: :pending, trace: true
 
-defmodule Captcha2Test do
+defmodule ChecksumTest do
   use ExUnit.Case
 
   test "with 3 rows" do
