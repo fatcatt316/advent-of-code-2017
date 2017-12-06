@@ -21,4 +21,8 @@ defmodule SpiralGridTest do
   test "from square 1024" do
     assert SpiralGrid.steps(1024) == 31
   end
+
+  test "from square 265149" do
+    assert SpiralGrid.steps(265149) == 438
+  end
 end
