@@ -7,14 +7,14 @@ defmodule PassphraseValidatorTest do
   use ExUnit.Case
 
   test "aa bb cc dd ee" do
-    assert PassphraseValidator.validate("aa bb cc dd ee") == true
+    assert PassphraseValidator.is_valid("aa bb cc dd ee") == true
   end
 
   test "aa bb cc dd aa" do
-    assert PassphraseValidator.validate("aa bb cc dd aa") == false
+    assert PassphraseValidator.is_valid("aa bb cc dd aa") == false
   end
 
   test "aa bb cc dd aaa" do
-    assert PassphraseValidator.validate("aa bb cc dd aaa") == true
+    assert PassphraseValidator.is_valid("aa bb cc dd aaa") == true
   end
 end
